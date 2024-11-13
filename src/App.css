@@ -1,0 +1,147 @@
+.app {
+  min-height: 100vh;
+  width: 100%;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px 5px;
+  font-size: 48px;
+}
+.inputs {
+  margin: auto;
+  width: 350px;
+  padding: 20px 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.inputs input,
+button {
+  padding: 10px;
+  border: 1px solid #9b5f41;
+  border-radius: 4px;
+}
+.inputs input:focus {
+  outline: none;
+}
+.inputs button {
+  color: #f5f5e9;
+  background-color: #9b5f41;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.inputs button:hover {
+  background-color: #724630;
+}
+.sample-pnr {
+  text-align: center;
+}
+.pnr-data {
+  width: 100%;
+}
+.timestamps {
+  margin-bottom: 30px;
+}
+.pnr-no {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.pnr-table {
+  padding: 0 2%;
+  padding-right: 0;
+}
+/*  */
+.pnr-details {
+  display: flex;
+  overflow-x: auto;
+  margin-bottom: 10px;
+}
+.table-head {
+  display: flex;
+  height: 100px;
+  background-color: #9b5f41;
+  color: #f5f5e9;
+}
+.table-data {
+  display: flex;
+  height: 50px;
+}
+.table-items {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table-head .table-items {
+  border-left: 1px solid #f5f5e9;
+}
+.table-head .table-items:nth-child(1) {
+  border-left: none;
+}
+.table-data .table-items {
+  border: 1px solid #9b5f41;
+  border-top: none;
+  border-right: none;
+}
+.table-data .table-items:nth-last-child(1) {
+  border-right: 1px solid #9b5f41;
+}
+/*  */
+.pnr-passenger-details {
+  display: flex;
+  overflow-x: auto;
+  margin-bottom: 10px;
+}
+.passenger-details-head {
+  display: flex;
+  height: 100px;
+  background-color: #9b5f41;
+  color: #f5f5e9;
+}
+.passenger-details-items {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.passenger-details-data {
+  display: flex;
+  flex-direction: column;
+}
+.passenger-row {
+  display: flex;
+  height: 50px;
+}
+.passenger-details-head .passenger-details-items {
+  border-left: 1px solid #f5f5e9;
+}
+.passenger-details-head .passenger-details-items:first-child {
+  border-left: none;
+}
+.passenger-details-data .passenger-details-items {
+  border: 1px solid #9b5f41;
+  border-right: 0;
+  border-top: none;
+}
+.passenger-row .passenger-details-items:last-child {
+  border-right: 1px solid #9b5f41;
+}
+/*  */
+.general-details {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 450px) {
+  .title {
+    font-size: 32px;
+  }
+  .inputs {
+    width: 100%;
+  }
+}
